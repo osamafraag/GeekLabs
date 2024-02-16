@@ -1,0 +1,87 @@
+.active{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+.inactive{
+    font-weight: bold;
+    text-align: center;
+    color: #313131;
+    margin-bottom: 30px;
+}
+.head{
+    display: none;
+}
+  .logo{
+    width:70%;
+    display: block;
+    margin:auto;
+  }
+.sidebar:hover{
+    animation: sidebar 0.7s forwards;
+} 
+.sidebar:hover .head{
+    display: inline;
+    animation: head 1s forwards;
+} 
+.sidebar:not(:hover) .head{
+    animation: headRev 0.7s;
+    display: none;
+}
+.sidebar:hover .active{
+    margin-bottom: 15px;
+    text-align: justify; 
+    margin-left: 10%;
+} 
+.active:hover{
+    color: #53ACFF;
+}
+.inactive:hover ~ .coming{
+    display: inline;
+}
+.sidebar:hover .inactive{
+    margin-bottom: 15px;
+    text-align: justify; 
+    margin-left: 10%;
+}
+.sidebar:not(:hover){
+    animation: rev 0.5s;
+}
+  @keyframes sidebar {
+    0% {width:85px;box-shadow: 0px 0px 8px black;}
+    50% {width:185px;box-shadow: 1px 0px 5px #313131;}
+    85% {width:177px;box-shadow: 3px 0px 8px #313131;}
+    100% {width:180px;box-shadow: 7px 0px 12px #313131;}
+  }
+  @keyframes rev {
+    0% {width:180px;}
+    50% {width:82px;}
+    85% {width:87px;}
+    100% {width:85px;}
+  }
+  @keyframes head {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+  }
+  @keyframes headRev {
+    0% {opacity: 100%;}
+    25% {opacity: 70%;}
+    50% {opacity: 25%;}
+    100% {opacity: 0%;}
+  }
+  .coming{
+    position: absolute;
+    margin-left: 10%;
+        display: none;
+        width: 70%;
+        height: 30px;
+        opacity: 50%;
+        text-align: center;
+        margin: auto;
+        background-color: #16acb4;
+        color: white;
+        box-shadow: 0px 0px 5px #03e9f4, 0px 0px 25px #16acb4, 0px 0px 50px #16acb4, 0px 0px 100px #16acb4;
+      }
+  
