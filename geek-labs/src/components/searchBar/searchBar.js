@@ -6,12 +6,12 @@ import { faMagnifyingGlass,faBell} from '@fortawesome/free-solid-svg-icons';
 export default function SearchBar() {
   return (
     <>
-    <div style={{display:'flex',position:'absolute',left:'136px',top:'19px'}}>
+    <div style={{display:'flex',position:'absolute',left:'8.5%',top:'19px'}}>
       <div style={{display:'flex'}}>
         <div style={{width:'5px',height:'55px',borderRadius:'3px',backgroundColor:'var(--accent-color)'}}></div>
         <p className='my-auto text-light fs-1 m-2' style={{fontWeight:'bold'}}>ALERTS</p>
       </div>
-      <div class="search-container my-auto mx-2 input-group">
+      <div class="search-container my-auto mx-1 input-group">
         <form>
           <input className='' type="search"name="search" placeholder='Search By...' style={{backgroundColor:'var(--secondary-color)',borderStyle:'none'}}/>
           <button type="submit"><FontAwesomeIcon icon={faMagnifyingGlass} /></button>

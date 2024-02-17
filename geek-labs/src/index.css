@@ -20,3 +20,17 @@ code {
   --green-color:#118F4B;
   ;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #181818;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #313131;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

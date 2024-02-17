@@ -1,3 +1,15 @@
+.sidebar{
+  position: absolute;
+  width:5%;
+  height:100%;
+  left:7px;
+  z-index:5
+}
+.logo{
+  width:70%;
+  display: block;
+  margin:auto;
+}
 .active{
     font-size: large;
     font-weight: bold;
@@ -6,6 +18,7 @@
     margin-bottom: 30px;
 }
 .inactive{
+    position: relative;
     font-weight: bold;
     text-align: center;
     color: #313131;
@@ -14,17 +27,42 @@
 .head{
     display: none;
 }
-  .logo{
-    width:70%;
-    display: block;
-    margin:auto;
-  }
+.coming{
+  top:0px;
+  left: 10px;
+  z-index:6;
+  display: none;
+  position:absolute;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  background-color: #16acb4;
+  color: white;
+  box-shadow: 0px 0px 5px #03e9f4, 0px 0px 25px #16acb4, 0px 0px 50px #16acb4, 0px 0px 100px #16acb4;
+}
+.name{
+  display: none;
+}
+.foot{
+  display: none;
+  color:#424242;
+  font-size:12px;
+  margin-left: 20px;
+}
 .sidebar:hover{
     animation: sidebar 0.7s forwards;
 } 
 .sidebar:hover .head{
     display: inline;
     animation: head 1s forwards;
+} 
+.sidebar:hover .name{
+  display: inline;
+  animation: name 1s forwards;
+} 
+.sidebar:hover .foot{
+  display: inline;
+  animation: foot 1s forwards;
 } 
 .sidebar:not(:hover) .head{
     animation: headRev 0.7s;
@@ -38,7 +76,7 @@
 .active:hover{
     color: #53ACFF;
 }
-.inactive:hover ~ .coming{
+.inactive:hover .coming{
     display: inline;
 }
 .sidebar:hover .inactive{
@@ -50,16 +88,16 @@
     animation: rev 0.5s;
 }
   @keyframes sidebar {
-    0% {width:85px;box-shadow: 0px 0px 8px black;}
-    50% {width:185px;box-shadow: 1px 0px 5px #313131;}
-    85% {width:177px;box-shadow: 3px 0px 8px #313131;}
-    100% {width:180px;box-shadow: 7px 0px 12px #313131;}
+    0% {width:5%;box-shadow: 0px 0px 8px black;}
+    50% {width:12.7%;box-shadow: 1px 0px 5px #313131;}
+    85% {width:12.2%;box-shadow: 3px 0px 8px #313131;}
+    100% {width:12.5%;box-shadow: 7px 0px 12px #313131;}
   }
   @keyframes rev {
-    0% {width:180px;}
-    50% {width:82px;}
-    85% {width:87px;}
-    100% {width:85px;}
+    0% {width:12%}
+    40% {width:5%;}
+    75% {width:5.4%;}
+    100% {width:5%}
   }
   @keyframes head {
     from {opacity: 0%;}
@@ -71,17 +109,12 @@
     50% {opacity: 25%;}
     100% {opacity: 0%;}
   }
-  .coming{
-    position: absolute;
-    margin-left: 10%;
-        display: none;
-        width: 70%;
-        height: 30px;
-        opacity: 50%;
-        text-align: center;
-        margin: auto;
-        background-color: #16acb4;
-        color: white;
-        box-shadow: 0px 0px 5px #03e9f4, 0px 0px 25px #16acb4, 0px 0px 50px #16acb4, 0px 0px 100px #16acb4;
-      }
-  
+  @keyframes name {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+  }
+  @keyframes foot {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+  }
+ 
