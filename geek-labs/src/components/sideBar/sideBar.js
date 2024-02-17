@@ -9,9 +9,8 @@ import { faGraduationCap, faBell ,faGears,faMoneyBillTrendUp,faFolderOpen}
 export default function SideBar() {
   return (
     <>
-    
-    <div className='position-relative ms-1 sidebar' 
-    style={{backgroundColor:'var(--main-color)',width:'85px',height:'835px'}}>
+    <div className='position-absolute sidebar' 
+    style={{zIndex: '5',backgroundColor:'var(--main-color)',width:'85px',height:'835px',left:'7px'}}>
       <div className='w-100' style={{paddingTop:'29px'}}>
         <img src={Logo} className='logo' ></img>
       </div>

@@ -7,8 +7,11 @@ import './App.css';
 function App() {
   return (
     <BrowserRouter>
-      <SideBar />
+    <div className="position-relative" style={{width:'1420px',height:'835px',backgroundColor:'var(--back-color)'}}>
+      <SideBar/>
       <Router/>
+    </div>
+      
     </BrowserRouter>
   );
 }

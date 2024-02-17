@@ -1,0 +1,21 @@
+
+.search-container form {
+    position: relative;
+}
+.search-container form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    background: transparent;
+    border: transparent;
+    font-size: 20px;
+    color: #F5F5F5;
+}
+.search-container form input{
+    width: 611px;
+    height: 38px;
+    border-radius: 5px;
+    
+}

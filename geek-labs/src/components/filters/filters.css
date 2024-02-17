@@ -1,0 +1,10 @@
+.filter-container{
+    width:427px;
+    height:783px;
+    float: right;
+    margin-top: 26px;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+    border-radius: 8px;
+}
